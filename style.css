@@ -1,6 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
+*{margin: 0;padding: 0;
 }
 a{
     text-decoration: none;
@@ -15,20 +13,65 @@ kbd>button{
     right:0;
     bottom: 0;
     display: none;
+    font-size: 6px;
+    border-radius: 2px;
+    line-height: 10px;
 }
 kbd:hover>button{
     display: inline-block;
 }
-#mainxzx > div:nth-child(2){
-    margin-left: 0em;
+#main > div:nth-child(2){
+    margin-left: -22px;
 }
-#mainxzx > div:nth-child(3){
-    margin-left: 0em;
+#main > div:nth-child(3){
+    margin-left: -90px;
 } 
-#mainxzx{
+#main{
     display: inline-block;  
+ 
+}
+body{
+    background: gray url(./zxx-min.jpg) no-repeat center center;
+    background-size: cover;
+}
+.wrapper{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
     
 }
 main{
+    height: 100vh;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.key{
+    width: 50px; height: 40px;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%);
+    border: 1px solid #373737;
+    border-radius: 6px;
+    color: #c5c5c5;
+    box-shadow: 0 0 0px 1px #1a1b1c, 0 0 0px 2px #1f2020, 0 2px 0 2px #080808;
+    font-size: 16px;
+    font-family:  Helvetica;
+    position: relative;
+}
+.row{
+    margin: 20px;
+}
+.row .key{
+    margin: 0 10px;
+}
+.key img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.key .text{
+    position:absolute;
+    left:4px;
+    top:2px;
 }
